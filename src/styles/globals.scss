@@ -1,0 +1,29 @@
+// Your global styles
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+// Force select dropdown to open downwards
+select {
+  /* For Chrome/Safari */
+  &::-webkit-select-inner-button,
+  &::-webkit-select-dropdown-button {
+    margin-top: 100vh;
+  }
+
+  /* For Firefox */
+  &:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+}
+
+/* For modern browsers */
+@supports (transform-origin: 0 0) {
+  select {
+    transform-origin: bottom left;
+  }
+} 

@@ -1,0 +1,28 @@
+@import '../_variables';
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 1rem;
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  color: $secondary-text;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  color: red;
+  font-weight: 500;
+} 

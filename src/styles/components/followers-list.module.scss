@@ -1,0 +1,48 @@
+@import '../variables';
+
+.followersContainer {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+.followersList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (min-width: $breakpoint-md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.loadingMore, .endMessage, .noFollowers {
+  text-align: center;
+  padding: 1rem;
+  color: $secondary-text;
+  margin-top: 1rem;
+}
+
+.endMessage {
+  border-top: 1px solid $border-color;
+}
+
+.loadingTrigger {
+  height: 20px;
+} 

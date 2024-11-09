@@ -1,0 +1,34 @@
+@import '../variables';
+
+.followerCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  background: white;
+
+  .followerAvatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  .followerInfo {
+    h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    a {
+      color: $link-color;
+      text-decoration: none;
+      font-size: 0.9rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+} 

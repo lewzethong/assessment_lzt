@@ -1,0 +1,41 @@
+@import '../_variables';
+
+.descriptionCell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+
+  .text {
+    margin: 0;
+    color: $text-color;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    word-break: break-word;
+
+  }
+
+  .toggleButton {
+    background: none;
+    border: none;
+    color: $link-color;
+    padding: 0;
+    font-size: 0.875rem;
+    cursor: pointer;
+    text-align: left;
+    width: fit-content;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.noDescription {
+  color: $secondary-text;
+  font-style: italic;
+} 
